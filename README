@@ -1,0 +1,24 @@
+Another job applicant's task :)
+Make a program that calculates square of a shape made of multiple unioned rectangles with side maximum length
+of 10000 points. The number of unioned rectangles can be within 100.
+The memory limit should be within 16 megabytes.
+
+java.util.BitSet seemed to be the appropriate structure for union operations
+
+Compilation:
+Run 'mvn package' maven command from the project's root folder (where pom.xml is located). 
+The executable jar will be created and put into ./target folder
+	Or 
+Import project into IDE and assemble it with IDE's tools
+
+Running:
+
+You should provide an input text file (with 'input.txt' as a default name ), with each line having two pairs of x,y coordinates - top left
+and bottom right coordinates of a rectangle.
+The program reads a line, creates a rectangle and unions it with a previous one. At the end it outputs
+the square of a shape made by those rectangles into the output text file (with 'output.txt' as a default name).
+
+Having executable jar assembled, run it with command: 
+    'java -jar ./folder-with-assembled-jar/testApp.jar input.txt output.txt'. 
+If jar is assembled with maven it should be located in './target' folder, so you can run it with:
+    'java -jar ./target/testApp.jar input.txt output.txt'
